@@ -1,0 +1,604 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding:0;
+        margin:0;
+        min-width:1030px;
+    }
+    p,ul{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding:0;
+    }
+    li{
+        list-style:none;
+    }
+    #top1{
+        width:100%;
+        height:299px;
+        background-image:url("img1/top2.jpg");
+        background-size:100% 100%;
+       
+    }
+    #head1{
+        width:100%;
+        height:70px;
+        background-color:rgba(0, 0, 0, 0.1);
+    }
+    #head11{
+        width:150px;
+        height:70px;
+        margin:auto;
+        margin-left:50px;
+        float:left;
+    }
+    #head11 img{
+        width:150px;
+        height:60px;
+        margin-top:5px;
+    }
+    #head12{
+        float:left;
+        text-align:center;
+        line-height:70px;
+        margin-left:40px;
+    }
+    #head12 a{
+        color:white;
+        text-decoration:none;
+    }
+    #head12 a:hover{
+        color:aqua;
+    }
+    #head13{
+        float:left;
+        text-align:center;
+        line-height:70px;
+        margin-left:40px;
+    }
+    #head13 a{
+        color:white;
+        text-decoration:none;
+    }
+    #head13 a:hover{
+        color:aqua;
+    }
+    #head14{
+        width:300px;
+        height:70px;
+        margin-left:40px;
+        float:left;
+        
+    }
+    #head141{
+        width:300px;
+        height:32px;
+        background:white;
+        line-height:30px;
+        margin-top:18px;
+    }
+    #head141 img{
+        width:20px;
+        height:20px;
+        cursor:pointer;
+    }
+    #head15{
+        width:40px;
+        height:40px;
+        border-radius:100%;
+        overflow:hidden;
+        float:right;
+        margin-top:15px;
+        margin-right:70px;
+    }
+    #head16{
+        float:right;
+        margin-right:20px;
+        line-height:70px;
+    }
+    #head16 a{
+        color:white;
+        text-decoration:none;
+    }
+    #head16 a:hover{
+        color:aqua;
+    }
+    #head17{
+        float:right;
+        margin-right:50px;
+        line-height:70px;
+    }
+    #head17 a{
+        color:white;
+        text-decoration:none;
+    }
+    #head17 a:hover{
+        color:aqua;
+    }
+    #middlef{
+       width:100%;
+       min-width:1030px;
+       background-image:url("img1/body_bg.jpg");
+       background-repeat:no-repeat;
+       background-color:#b4daf0;
+       display:inline-block;
+    }
+    #middlef1{
+        width:1030px;
+        margin:0 auto;
+     
+        margin-top:30px;
+    
+    }
+    #middles1{
+        width:170px;
+        float:left;
+        z-index:3000;
+    }
+    #middle1 ul{
+        width:170px;
+        height:200px;
+        border-radius:10px;
+    }
+    #middle1 li{
+        width:170px;
+        height:40px;
+        background:highlight;
+       
+        line-height:40px;
+        
+        cursor:pointer;
+    }
+    #middle1 li img{
+        width:18px;
+        height:18px;
+        margin-left:27px;
+        vertical-align:middle;
+    }
+    #middle1 li:hover{
+        background:#e4f2f3;
+    }
+    #middle2 ul{
+        width:170px;
+        height:240px;
+        border-radius:10px;
+    }
+    #middle2 li{
+        width:170px;
+        height:40px;
+        background:highlight;
+        
+        line-height:40px;
+        
+        cursor:pointer;
+    }
+    #middle2 li img{
+        width:18px;
+        height:18px;
+        margin-left:27px;
+        vertical-align:middle;
+    }
+    #middle2 li:hover{
+        background:#e4f2f3;
+    }
+    #middle3{
+        width:800px;
+        float:right;
+        background:white;
+        
+
+    }
+   
+    .wenzhangf{
+       text-align:center;
+    }
+    #wenzhang1{
+        width:700px;
+        margin:0 auto;      
+    }
+    .auto-style1 {
+        height: 200px;
+    }
+    #Button1{
+        width:90px;
+        height:35px;
+        background:#0084ff;
+        border:none;
+        border-radius:3px;
+        outline-style:none;
+        float:right;
+        margin-right:48px;
+        margin-top:15px;
+        letter-spacing:2px;
+        color:white;
+    }
+    #Button2{
+       height:35px;
+       float:left;
+       background:#0084ff;
+       border:none;
+       border-radius:3px;
+       outline-style:none;
+       letter-spacing:2px;
+       color:white;
+    }
+    #Button3{
+       text-align:center;
+       margin:0 auto;
+       height:35px;
+       background:#0084ff;
+       border:none;
+       border-radius:3px;
+       outline-style:none;
+       letter-spacing:2px;
+       color:white;
+    }
+    #Button4{
+       height:35px;
+       float:right;
+       background:#0084ff;
+       border:none;
+       border-radius:3px;
+       outline-style:none;
+       letter-spacing:2px;
+       color:white;
+    }
+    #Button1:hover{
+        cursor:pointer;
+        background:#0077e6;
+    }
+    #Button2:hover{
+        cursor:pointer;
+        background:#0077e6;
+    }
+    #Button3:hover{
+        cursor:pointer;
+        background:#0077e6;
+    }
+    #Button4:hover{
+        cursor:pointer;
+        background:#0077e6;
+    }
+    #middle4{
+        width:800px;
+        
+        float:right;
+        background:white;
+        margin-top:20px;
+
+    }
+    #middle5 img{
+        float:left;
+        width:60px;
+        height:60px;
+        border:3px solid lightblue;
+    }
+    #Label1{
+        width:700px;
+        display:inline-block;
+    }
+    #nr1{
+        line-height:60px;
+        display:inline-block;
+        margin-left:10px;
+    }
+    #nr2{
+        font-size:15px;
+        color:#8a8a8a;
+        /* float:right; */
+        display:inline-block;
+        margin-top:40px;
+    }
+    #bizhi1{
+      
+        z-index: 2000;
+        position: fixed;
+        bottom: -10px;
+        left:0;
+    }
+    #bizhi1 img{
+         width:150px;
+        
+        /* background:red; */
+    }
+     #bizhi2{
+       
+        z-index: 2000;
+        position: fixed;
+        bottom: -15px;
+        right:0;
+    }
+    #bizhi2 img{
+        width:160px;
+        height:550px;
+    }
+</style>
+<body>
+    <form id="form1" runat="server">
+        
+        <div>
+            <div id="top1">
+                <div id="head1">
+                    <div id="head11">
+                        <img src="img1/logo.png" alt="">
+                        <!-- <asp:Image  runat="server" ImageUrl="~/img1/logo.png" /> -->
+                    </div>
+                    <div id="head12">
+                        <a href="#">首页</a>
+                    </div>
+                    <div id="head13">
+                        <a href="#">足迹</a>
+                    </div>
+                    <div id="head14">
+                        <div id="head141">
+                            <input type="text"  placeholder="  搜索" style="height:28px;width:265px;border:0;outline:none;"/>
+                            <img src="img1/搜索.png" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/搜索.png" style="position:relative;top:5px;"  /> -->
+                        </div>
+                        
+                    </div>
+                    <div id="head15">
+                        <img src="img1/头像.jpg" alt="" style="width:40px;height:40px;">
+                        <!-- <asp:Image  runat="server" ImageUrl="~/img1/头像.jpg" style="width:40px;height:40px;" /> -->
+                    </div>
+                    <div id="head16">
+                        <a href="#">我的LIVE</a></div>
+                    <div id="head17">
+                        <a href="#">个人兴趣</a></div>
+               </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                <p id="topzi" style="font-family: 华文仿宋; font-size: 35px; font-weight: bold; text-decoration: none; color: lightcyan;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 仙人掌上的刺猬的个人主页</p>
+                <div id="topimg">
+                    <img src="img1/头像.jpg" alt=""  style="width:75px;height:75px; border:2px solid white;margin-left:60px;margin-top:50px;float:left;">
+                    <!-- <asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/img1/头像.jpg" Width="75px" style="border:2px solid white;margin-left:60px;margin-top:50px;float:left;"/> -->
+                    <div style="float:left;margin-top:50px;">
+                        <p style="float:left;margin-top:10px;margin-left:15px;color:#333;  font-size:18px;">仙人掌上的刺猬</p>
+                        <p style="margin-left:15px; margin-top:50px; font-size:12px; color:#333;">成长值</p>
+                        <div style="background:white;width:100px;height:5px;margin-top:5px;margin-left:15px;border-radius:5px;">
+                            <div style="width:60px;height:5px;background:yellow;border-radius:5px;">
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="fangke" style="margin-top:20px;">
+                    <div style="float:right;margin-right:80px;margin-top:80px;">
+                        <p style="color:#333;font-weight:bold;font-size:12px;">今日访客 139</p>
+                        <p style="color:#333;font-weight:bold;font-size:12px;">访客总量 17796</p>
+                    </div>
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/img1/访客数.png"  style="margin-top:60px;float:right;"/>
+                </div>
+            </div>
+            <div id="middlef">
+                <div id="middlef1">
+                    <div id="middles1">
+                        <div id="middle1">
+                        <ul>
+                            <li>
+                                <img src="img1/好友动态.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/好友动态.png" /> -->
+                                好友动态
+                            </li>
+                            <li>
+                                <img src="img1/与我相关.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/与我相关.png" /> -->
+                                与我相关
+                            </li>
+                            <li>
+                                <img src="img1/历史文章.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/历史文章.png" /> -->
+                                历史文章
+                            </li>
+                            <li>
+                                <img src="img1/亲密度.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/亲密度.png" /> -->
+                                亲密度
+                            </li>
+                            <li>
+                                <img src="img1/文章分类.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/文章分类.png" /> -->
+                                文章分类
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="middle2" style="margin-top:20px;">
+                        <ul>
+                            <li>
+                                <img src="img1/我的收藏.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/我的收藏.png" /> -->
+                                我的收藏
+                            </li>
+                            <li>
+                                <img src="img1/我关注的问题.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/我关注的问题.png" /> -->
+                                我关注的问题
+                            </li>
+                            <li>
+                                <img src="img1/我的邀请.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/我的邀请.png" /> -->
+                                我的邀请
+                            </li>
+                            <li>
+                                <img src="img1/咨询.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/咨询.png" /> -->
+                                社区服务中心
+                            </li>
+                            <li>
+                                <img src="img1/咨询1.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/咨询1.png" /> -->
+                                版权服务中心
+                            </li>
+                            <li>
+                                <img src="img1/编辑.png" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/编辑.png" /> -->
+                                公共编辑动态
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                    <div id="middle3" class="auto-style2">
+                        <h2 style="text-align:center;">如何评价《火影忍者·博人传》第65集？</h2>
+                        <div id="wenzhang1">
+                            <div class="wenzhangf">
+                                <img src="img1/v2-fcdb9d57aeaadddabdf8193660d4e446_hd.jpg" alt="">
+                                <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-fcdb9d57aeaadddabdf8193660d4e446_hd.jpg" /> -->
+                            </div>        
+                             <p>各位请理性配合食用。</p>
+                            <hr />
+                            <p>以下为答案</p>
+                            <br />
+                            <p style="line-height: 23px">先不说我二柱子终于在720+64集终于露出了姨母一样的笑容，以及鸣佐在博人扔完祖传螺旋丸之后的各种恩爱，说起来国人导演还是挺懂国内火影迷的内心的。<br />
+                            整集内容紧凑一点不拖沓，试问又有多少次20分钟打两架 <br />
+                            战前BB必不可少直接切换镜头到战斗中  
+                            </p>
+                            <br />
+                            <img src="img1/v2-2b0ff49800f2f1ed4e30d7789cf640c4_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-2b0ff49800f2f1ed4e30d7789cf640c4_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <b>优酷弹幕有人说，巅峰鸣佐桃式根本不是对手？</b>
+                            <br />
+                            <br />
+                            <p style="line-height: 23px">看来还是有人对巅峰鸣佐停留在大筒木辉夜的时候，要知道辉夜是个女的从出场到被封印基本使用能力为外星超能力+查克拉原始忍术。不具备优秀的体术，当然体术凯已经被斑弄倒了，所以疾风传后期基本也就只剩忍术战斗，体术没得看。<br />
+                                二来桃式基础技能就是吸收忍术，说什么不如巅峰鸣佐的，这两个用忍术了吗？疾风传就没怎么用过体术的，你指望体术战斗能打得过？总体来说桃式的能力应该在辉夜之上。在没有了解敌人弱点的时候，贸然使用查克拉忍术肯定会被吸收，可见鸣佐成年后还是聪明了很多，至少名人不再是意外险NO.1的忍者了。
+                                <br />
+                                <br />
+                            </p>
+                            <b>
+                                说完为啥不如巅峰鸣佐之后，再来看看巅峰鸣佐
+                            </b>
+                            <br />
+                            <br />
+                            <img src="img1/v2-e3201b079ce4328b705ae63b2be389a9_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-e3201b079ce4328b705ae63b2be389a9_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <p style="line-height: 23px">（夸一夸姨母微笑和国风式分镜，动态图效果会好很多）</p>
+                            <br />
+                            <p style="line-height: 23px">前文已经说了，在不知道对手的能力之前贸然使用全力，百分百翻车。正所谓孙子兵法，知己知彼，百战不殆，能力是逐步试探出来的。</p>
+                            <br />
+                            <p>在这里给看官们解释一下鸣人为何没有六道之力，而二柱子为啥有轮回眼。</p>
+                            <br />
+                            <img src="img1/v2-fb760acdb4f078557a25d66d29f03eca_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-fb760acdb4f078557a25d66d29f03eca_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <p style="line-height: 23px">带土成为六道时身后有求道玉，因为体内有9个尾兽的，四战之后六道让鸣人成为9个尾兽的人柱力让尾兽们能在鸣人体内聚会。</p>
+                            <br />
+                            <img src="img1/v2-174a11997cb1e33e65fcf3f92d641e02_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-174a11997cb1e33e65fcf3f92d641e02_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <p style="line-height: 23px">此文已说明鸣佐已丧失六道之力，鸣人没有求道玉，但是二柱子有轮回眼就说得过去了毕竟斑也有轮回眼，所以不要在叫嚣说什么，为何不用六道之力，他们没有！没有！没有！</p>
+                            <br />
+                            <img src="img1/v2-f95041d2261c5d75cfa2c337af1b6805_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-f95041d2261c5d75cfa2c337af1b6805_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <p>（插播护妻狂魔，嘤嘤嘤……）</p>
+                            <br />
+                            <img src="img1/v2-0425fd7ddd7dd9821da4644317c3eaca_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-0425fd7ddd7dd9821da4644317c3eaca_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <p style="line-height:23px;">来自岸本的分镜</p>
+                            <br />
+                            <img src="img1/v2-e69ef0cb9685eae33e89cc5fbf14864c_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-e69ef0cb9685eae33e89cc5fbf14864c_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <p style="line-height:23px;">再看黄成希国风分镜，有没有浓浓的仙侠味道，而且还和火影的感觉不冲突。（一副魁拔的味道看起来还津津有味……）</p>
+                            <br />
+                            <img src="img1/v2-3def98fcc1195e51925f58a4240b027d_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-3def98fcc1195e51925f58a4240b027d_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <p style="line-height:23px;">有人在这个镜头吐槽二柱子偷学飞雷神，- -人家疾风传就说了，这是轮回眼的能力，短距离替换，而且新版的戳瞎桃式的吸收轮回眼的方式比剧场版有水准，总的来说，毕竟博人还小，让他去戳瞎眼睛再逃脱，和拥有传送能力的佐助，私以为佐助更合情合理，毕竟如果是博人就太吹了。</p>
+                            <br />
+                            <img src="img1/v2-9502af92e63d5d2da5ddf8445ca4a10c_hd.jpg" alt="">
+                            <!-- <asp:Image  runat="server" ImageUrl="~/img1/v2-9502af92e63d5d2da5ddf8445ca4a10c_hd.jpg" /> -->
+                            <br />
+                            <br />
+                            <p style="line-height:23px;">说起来大筒木祖传散发美颜，这一瞬间我以为我看到了兔子大妈。</p>
+                            <br />
+                            <hr />
+                            <br />
+                            <br />
+                            <p style="line-height:23px;">总的来说这是博人传最有质量的以及不为过，五影都是也都是超影级，通过桃式的一波瞬秒，来解释桃式的能力在辉夜之上，通过鸣佐前战来试探桃式的能力，鸣佐不是不在巅峰之上，而是有了战斗智慧，不再是那个意外险NO.1的忍者，最起码私以为这智商中忍考试肯定会过的，别再吐槽木叶下忍打架了，再说一战大家都保存了实力，打起来觉得不强很正常。二战时佐助发现桃式弱点，这才让博人能一击击败桃式。两战的逻辑性，以及动作流畅性都不是博人传前64集能比的，所以65集为博人传最有质量的一级不为过，忍两个星期不为过，以后要都是这个质量偶尔水水，两个星期更一级，再来十五年，火影也走的下去。</p>
+                            <br />
+                            <br />
+                            <p style="line-height:23px;">这是我头一次看到国漫的希望。（在日漫看见国漫的希望，真是讽刺啊。）</p>
+                            <br />
+                            <br />
+                            <p style="line-height:23px">以上</p>
+                            <br />
+                            <p style="font-size:13px;color:#8a8a8a;">编辑于 2018-09-10</p>
+                            <!-- <br /> -->
+                            <div class="auto-style1">
+                                <!-- <input type="button" value="好评" id="pingjia1"> -->
+                                <!-- <asp:RadioButton ID="pingjia1" runat="server" GroupName="pingjia3" Text="好评" /> -->
+                                <asp:RadioButton ID="pingjia2" runat="server" GroupName="pingjia3" Text="差评" />
+
+                                <br />
+                                <br />
+                                <textarea name="" id="" cols="90    " rows="5" placeholder="  请输入评论内容"></textarea>
+                                <asp:TextBox ID="TextBox1" runat="server" Height="85px" Width="650px" placeholder="  请输入评论内容"></asp:TextBox>
+                                <br />
+                                <input type="button" value="提交评论" id="Button1">
+                                <!-- <asp:Button ID="Button1" runat="server" type="button" Text="提交评论" OnClick="Button1_Click" /> -->
+
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div id="middle4"  runat="server" >
+                        <div style="height:30px;width:700px;background:white;margin:auto;text-align:center;margin-top:10px;">
+                            <asp:Button ID="Button2" runat="server" Text="查看所有好评" OnClick="Button2_Click" />
+                            <asp:Button ID="Button3" runat="server" Text="查看所有差评" OnClick="Button3_Click" />
+                            <asp:Button ID="Button4" runat="server" Text="查看所有评论" OnClick="Button4_Click" />
+                        </div>
+                        <div style="height:30px;width:700px;background:white;margin:auto;border-bottom:1px solid #ebebeb;">
+                            <h4 style="width:100px;color:#8590a6;background:white;text-align:center;margin:0 auto;position:relative;top:20px;">更多评论</h4>
+                            <br />
+                            <br />
+                            <br />
+                            
+                        </div>
+                       <div id="middle5" runat="server" style="width:700px;margin:auto;margin-top:30px;">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                 
+            </div>
+            
+        </div>
+       <div id="bizhi1">
+           <img src="img1/bizhi1.png" alt="">
+            <!-- <asp:Image  runat="server" ImageUrl="~/img1/bizhi1.png "/> -->
+       </div>
+       <div id="bizhi2">
+           <img src="img1/bizhi2.png" alt="">
+            <!-- <asp:Image  runat="server" ImageUrl="~/img1/bizhi2.png "/> -->
+       </div>
+    </form>
+    
+    </body>
+</html>
+
+</body>
+</html>
